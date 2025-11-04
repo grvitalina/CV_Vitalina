@@ -1,0 +1,132 @@
+
+/* 2. АДАПТАЦІЯ ДЛЯ ПЛАНШЕТІВ (max-width: 1200px) */
+
+@media (max-width: 1700px) {
+
+    .white-central-container {
+        width: 95%;
+    }
+
+
+    .navbar {
+        width: 95%; 
+        padding: 20px 30px;
+    }
+    
+    .logo {
+        font-size: 2rem; 
+    }
+    
+    .link a {
+        font-size: 1.2rem; 
+    }
+
+    
+    .about, .projects, .skills {
+        padding: 0px 5rem;
+    }
+
+    
+    .about-details, .skills-details, .edu-details {
+        gap: 5rem;
+    }
+}
+
+
+
+/* 3. АДАПТАЦІЯ ДЛЯ ТЕЛЕФОНІВ (max-width: 768px) */
+
+@media (max-width: 768px) {
+
+    .cloud-bg-left,
+    .cloud-bg-right {
+        display: none;
+    }
+    
+
+    .navbar {
+        width: 100%;
+        padding: 15px 15px;
+    }
+
+    /* СКЛАДАННЯ КОЛОНОК В ОДИН РЯДОК */
+    .about-details, 
+    .skills-details, 
+    .edu-details {
+        flex-direction: column; 
+        gap: 30px; 
+        padding: 0 10px; 
+        max-width: 100%;
+    }
+    
+    .about-details .left, .about-details .right,
+    .skills-details .left, .skills-details .right,
+    .edu-details .left, .edu-details .right {
+        flex-basis: 100%; 
+        text-align: left; 
+    }
+
+
+    .projects-details .focus-lists {
+        flex-direction: column; 
+        gap: 15px;
+    }
+    
+    .projects-details .top {
+        flex-direction: column; 
+        align-items: flex-start;
+        gap: 5px;
+    }
+    
+    .projects-details .topic, .about-details .topic, .skills-details .topic {
+        font-size: 1.3rem;
+    }
+    
+    .projects-details .explanation, .projects-details .role,
+    .about-details p, .skills-details li {
+        font-size: 1rem;
+    }
+}
+
+
+/* 4. НАЙВУЖЧІ ЕКРАНИ (max-width: 576px) */
+
+@media (max-width: 576px) {
+
+    .navbar {
+        display: none !important; 
+    }
+
+
+    .white-central-container {
+        margin-top: 0 !important;
+    }
+
+
+    .image {
+        width: 15rem; 
+        height: 15rem;
+    }
+    
+    .cloud-bg-ava {
+        width: 25rem; 
+        height: 15rem;
+    }
+    
+    .job {
+        font-size: 1.2rem;
+    }
+    
+
+    .about, .projects, .skills {
+        padding: 0px 1rem;
+    }
+    
+    .footer-links {
+        gap: 30px;
+    }
+    
+    .footer-icon {
+        font-size: 2rem;
+    }
+}
